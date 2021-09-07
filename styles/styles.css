@@ -1,0 +1,134 @@
+@font-face {
+        font-family: 'FireSansBoldItalic';
+        src: url('../fonts/Fira_Sans/FiraSans-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+        font-family: 'Allison';
+        src: url('../fonts/Allison/Allison-Regular.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+    background-color: white;
+}
+
+body {
+    max-width: 900px;
+    background-color: hsl(203,60%,90%);
+    margin: auto;
+    border: hsl(27,84%,94%) 5px solid;
+}
+
+.title {
+    font-family: FireSansBoldItalic;
+    font-size: 2rem;
+    color: hsl(228,36%,39%);
+    margin-bottom: 20px;
+}
+
+header {
+    margin-top: 20px;
+    padding: 5%;
+    font-family: FireSansBoldItalic;
+    font-size: 3rem;
+    color: hsl(228,36%,39%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(27,84%,94%);
+}
+
+header p {
+    width: 50%;
+    /*background-color: green;*/
+}
+header figure {
+    width: 25%;
+    /*background-color: red;*/
+}
+header img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+/*main*/
+.desc {
+    margin: 13px;
+    font-family: FireSansBoldItalic;
+    font-size: 1rem;
+    color: hsl(228,36%,39%);
+}
+
+.property {
+    margin: 30px 13px;
+}
+.yachts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.yacht {
+    min-width: 300px;
+    height: 250px;
+    margin: 20px;
+    background-color: hsl(203,60%,90%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.yacht span {
+    padding: 5px;
+    background-color: hsl(203,60%,90%);
+    font-family: Allison;
+    font-size: 3rem;
+    color: hsl(228,36%,39%);
+}
+
+#yacht1 {
+    background-image: url(../images/yacht1.jpg);
+}
+
+#yacht2 {
+    background-image: url(../images/yacht2.jpg);
+}
+
+#yacht3 {
+    background-image: url(../images/yacht3.jpg);
+}
+
+#yacht4 {
+    background-image: url(../images/yacht4.jpg);
+}
+
+footer {
+    background-color: hsl(27,84%,94%);
+}
+
+footer h2 {
+    padding: 5% 5% 2% 5%;
+    font-family: Allison;
+    font-size: 4rem;
+    color: hsl(228,36%,39%);
+}
+
+footer p {
+    padding: 2% 5% 5% 5%;
+    font-family: FireSansBoldItalic;
+    font-size: 2rem;
+    color: hsl(228,36%,39%);
+}
+
+@media only screen and (max-width: 680px) {
+  header figure {
+    display: none;
+}
+
+header p {
+    width: 90%;
+}
+}
